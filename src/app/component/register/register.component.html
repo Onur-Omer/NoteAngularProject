@@ -1,0 +1,24 @@
+<body class="text-center">
+    <main class="form-signin">
+    <form [formGroup]="registerForm">
+      <img class="mb-4" src="assets/images/card-text.svg" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Please Sign In</h1>
+      <label for="floatingInputFirstName" class="sr-only"></label>
+      <input formControlName="firstName" type="text" id="floatingInputFirstName" class="form-control" placeholder="First Name" required="" autofocus="">
+      <label for="floatingInputLastName" class="sr-only"></label>
+      <input formControlName="lastName" type="text" id="floatingInputLastName" class="form-control" placeholder="Last Name" required="" autofocus="">
+      <label for="floatingInput" class="sr-only"></label>
+      <input formControlName="email" type="email" id="floatingInput" class="form-control" placeholder="Email address" required="" autofocus="">
+      <label for="floatingPassword" class="sr-only"></label>
+      <input formControlName="password" type="password" id="floatingPassword" class="form-control" placeholder="Password" required="">
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block " type="submit" (click)="register()">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">© 2017-2021</p>
+    </form>
+</main>
+
+</body>
